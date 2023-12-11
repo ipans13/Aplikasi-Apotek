@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmenthome"
+    tools:context=".home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/topbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/topbar"
+            android:gravity="center"
+            >
+        <LinearLayout
+
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+
+            android:outlineAmbientShadowColor="@color/black"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang,"
+                android:textColor="@color/teal_700"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:background="@drawable/obat_bubuk"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="User: "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/user_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:ignore="MissingConstraints" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="ID: "
+                    android:textColor="@color/white"
+                    android:gravity="right"
+                    android:textSize="14dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/user_idinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:layout_gravity="left"
+                    android:textSize="14dp"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+            <ImageView
+                android:id="@+id/btn_logout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icons_logout"
+                android:backgroundTint="@color/teal_700"
+                />
+        </LinearLayout>
+<LinearLayout
+    android:id="@+id/location"
+    android:layout_below="@id/topbar_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:gravity="center|left"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/icon_loc"
+        />
+    <TextView
+        android:id="@+id/link_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="Obat Menuju Kadaluarsa"
+        android:textColor="@color/teal_700"
+        android:textStyle="italic|bold"
+        />
+
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/banner_prakadaluarsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginTop="31dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:text="Obat Menuju Kadaluarsa"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:foreground="@drawable/obat_bubuk" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/prakadaluarsa_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner_prakadaluarsa"
+
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:background="@color/recel"
+                android:paddingHorizontal="10dp"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/prakadaluarsa_recy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20px"
+            tools:layout_editor_absoluteX="0dp"
+            android:background="@color/teal_700"
+            android:layout_below="@id/prakadaluarsa_scroll"
+            >
+
+            <LinearLayout
+                android:layout_width="90sp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="30dp"
+                >
+                <TextView
+                    android:id="@+id/jumlah_Obat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    />
+                <TextView
+                    android:id="@+id/label_jumlah_Obat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Jumlah Obat"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="90sp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="30dp"
+                >
+                <TextView
+                    android:id="@+id/Obat_Kosong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    />
+                <TextView
+                    android:id="@+id/Label_Obat_kosong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Obat Kosong"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

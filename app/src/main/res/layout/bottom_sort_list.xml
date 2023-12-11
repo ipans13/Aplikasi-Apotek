@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/teal_700"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Bubuk"
+            android:layout_margin="5dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Cair"
+            android:layout_margin="5dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Pil"
+            android:layout_margin="5dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Kapsul"
+            android:layout_margin="5dp"
+            />
+    </RadioGroup>
+</LinearLayout>

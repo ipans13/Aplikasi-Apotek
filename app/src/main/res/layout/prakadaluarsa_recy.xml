@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:layout_marginLeft="20dp"
+    >
+<ImageView
+    android:id="@+id/prakadaluarsa_image"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_marginVertical="10dp"
+
+    />
+    <TextView
+        android:id="@+id/prakadaluarsa_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Obat"/>
+    <TextView
+        android:id="@+id/prakadaluarsa_jenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Jenis"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Tersedia: "/>
+    <TextView
+        android:id="@+id/jml_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text=""/>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="kadaluarsa:"
+        android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/prakadaluarsa_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:text="kadaluarsa"
+        android:textSize="12dp"
+        />
+    <Button
+        android:id="@+id/update_home"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center|bottom"
+        android:text="Update"
+        android:layout_marginBottom="15dp"
+        android:padding="0dp"
+        android:textColor="@color/white"
+        android:background="@drawable/obat_bubuk"
+        android:textSize="7dp"
+        />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:layout_gravity="center|bottom"
+    android:layout_marginHorizontal="5dp"
+    android:background="@drawable/obat_bubuk"
+    />
+</LinearLayout>

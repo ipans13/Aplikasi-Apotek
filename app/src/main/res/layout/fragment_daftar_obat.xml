@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentlist"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".list.daftarObatFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topbar_list_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <SearchView
+                android:id="@+id/src_item"
+                android:layout_width="250sp"
+                android:layout_height="50dp"
+                android:background="@drawable/search_bar"
+                android:layout_marginVertical="3dp"
+                android:iconifiedByDefault="false"
+                />
+            <Button
+                android:id="@+id/qrcode"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:pointerIcon="hand"
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center"
+                android:theme="@style/factnotbutton"
+                android:background="@drawable/icon_qrcode"
+                />
+        </LinearLayout>
+    </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topbar_list_search"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/recel"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_obat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</FrameLayout>

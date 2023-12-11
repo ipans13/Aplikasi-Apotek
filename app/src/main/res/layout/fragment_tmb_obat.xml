@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambah.tmbObatFragment"
+    android:layout_gravity="center"
+    android:id="@+id/tmb_obat_frame"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Register_Activity"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="30dp"
+                    >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:text="Tambah Obat Baru"
+                    android:textStyle="bold"
+                    android:textColor="@color/teal_700"
+                    />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/obat_bubuk"
+                        android:layout_marginVertical="20dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/label_obat"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Obat"
+
+                        />
+                    <EditText
+                        android:id="@+id/Text_obat"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:ems="10"
+                        android:hint="Masukkan Nama Obat"
+                        android:inputType="text"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/label_Jenis"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Obat"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner_Jenis"
+                        android:layout_width="240sp"
+                        android:layout_height="wrap_content"
+
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+
+                    >
+                    <TextView
+                        android:id="@+id/label_kadaluarsa"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Kadaluarsa"
+
+                        />
+
+
+                    <EditText
+                        android:id="@+id/text_kadaluarsa"
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:drawableEnd="@drawable/icon_date"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="12dp"
+                        android:hint="Masukkan tanggal Kadaluarsa"
+                        android:inputType="date"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+
+                    >
+                    <TextView
+                        android:id="@+id/label_harga"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Harga Satuan"
+
+                        />
+
+
+                    <EditText
+                        android:id="@+id/text_harga"
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+
+                        android:ems="10"
+                        android:textSize="14dp"
+                        android:hint="Harga Satuan"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/label_jumlah"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Obat"
+
+                        />
+                    <EditText
+                        android:id="@+id/Text_jumlah"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:ems="10"
+                        android:hint="Masukkan Jumlah Obat"
+                        android:inputType="number"
+                        android:text="" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/label_deskripsi"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripsi Obat"
+
+                        />
+                    <EditText
+                        android:id="@+id/text_desk"
+                        android:layout_width="240dp"
+                        android:layout_height="130dp"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="Deskripsi dari Obat "
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginVertical="10dp"
+                    >
+                    <Button
+                        android:id="@+id/btntmb_obat"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Tambah Obat"
+                        android:backgroundTint="@color/teal_700"
+                        android:textColor="@color/white"
+
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
